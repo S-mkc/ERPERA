@@ -1,6 +1,6 @@
 frappe.ui.form.on("Out Of Office Slip", {
 onload_post_render: function(frm){
-	
+cur_frm.refresh_fields();	
 if (frm.doc.workflow_state == "Pending" && frm.doc.custom_salary_slip_approver != frappe.session.logged_in_user)
 	 {
 		$('.actions-btn-group').hide()
