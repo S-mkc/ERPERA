@@ -28,6 +28,7 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Out Of Office Slip" : "public/js/out_of_office.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -123,6 +124,11 @@ app_license = "MIT"
 #		"on_trash": "method"
 #	}
 # }
+doc_events = {
+  	"Out Of Office Slip": {
+		"on_update": "raindrop.Custom_Code.out_of_office.on_update"
+		# "validate": "raindrop.custom_code.expense_claim.on_save"
+}
 
 # Scheduled Tasks
 # ---------------
