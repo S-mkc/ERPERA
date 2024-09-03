@@ -20,7 +20,7 @@ if (frm.doc.workflow_state == "Pending" && frm.doc.custom_salary_slip_approver !
     before_save(frm)
         {
             frappe.call({
-            method: 'erp.erp.Custom_Code.out_of_office.add_approver',
+            method: 'erp.Custom_Code.out_of_office.add_approver',
             args: {
                 owner: frm.doc.owner
             },
