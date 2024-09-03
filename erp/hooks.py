@@ -129,6 +129,7 @@ doc_events = {
 		"on_update": "erp.Custom_Code.out_of_office.on_update"
 		# "validate": "raindrop.custom_code.expense_claim.on_save"
 }
+}
 
 # Scheduled Tasks
 # ---------------
