@@ -8,14 +8,26 @@ frappe.query_reports["Purchase Order Custom"] = {
 			fieldname: "company",
 			label: __('Company'),
 			fieldtype: 'Link',
-			option: 'Company',
+			options: 'Company',
+			reqd: 1
 			// default: frappe.defaults.get_user_defalut('company')
 		},
 		{
 			fieldname: 'From Date',
 			label: __('from date'),
 			fieldtype: 'Date'
-		}
+		},
+		{
+			fieldname: 'To Date',
+			label: __('to date'),
+			fieldtype: 'date'
+		},
+		{
+			fieldname: "Supplier",
+			label: __("Supplier"),
+			fieldtype: 'Link',
+			options: 'Supplier'
 
+		}
 	]
 };
