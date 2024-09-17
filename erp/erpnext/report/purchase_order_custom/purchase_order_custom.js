@@ -23,8 +23,8 @@ frappe.query_reports["Purchase Order Custom"] = {
 			fieldtype: 'date'
 		},
 		{
-			fieldname: "Supplier",
-			label: __("Supplier"),
+			fieldname: 'Supplier',
+			label: __('Supplier'),
 			fieldtype: 'Link',
 			options: 'Supplier'
 
