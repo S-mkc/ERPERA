@@ -9,7 +9,7 @@ frappe.query_reports["Purchase Order Custom"] = {
 			label: __('Company'),
 			fieldtype: 'Link',
 			option: 'Company',
-			default: frappe.defaults.get_user_defalut('company')
+			// default: frappe.defaults.get_user_defalut('company')
 		},
 		{
 			fieldname: 'From Date',
